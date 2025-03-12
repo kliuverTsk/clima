@@ -87,7 +87,7 @@ export function FormCiudad() {
                     value={city}
                 />
                 <button type="submit">Buscar</button>
-                <button type="button" onClick={obtenerClimaGeolocation}>
+                <button id="geo" type="button" onClick={obtenerClimaGeolocation}>
                     Usar mi ubicación
                 </button>
             </form>

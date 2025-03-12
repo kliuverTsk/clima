@@ -60,6 +60,11 @@ body {
     font-size: 16px;
 }
 
+/* Agregamos margen al segundo botón */
+.search-form button + button {
+    margin-left: 10px;
+}
+
 .search-form button:hover, .mostrar-detalles:hover {
     background: rgba(255, 255, 255, 0.3);
     transform: scale(1.05);
@@ -163,11 +168,17 @@ body {
     border-radius: 4px;
 }
 
+
 /* Estilos responsivos */
 @media (max-width: 768px) {
     .search-form input {
-        width: 100%;
+        width: 80%;  /* Cambiado de 100% a 80% */
         margin-bottom: 1rem;
+        margin-right: 0;  /* Asegura que no haya margen derecho en móvil */
+    }
+
+    .search-form button + button {
+        margin-top: 10px;  /* Espacio entre botones en móvil */
     }
 
     .ciudad-titulo {
